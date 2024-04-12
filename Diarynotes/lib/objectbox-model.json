@@ -1,0 +1,501 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:1735960282800903224",
+      "lastPropertyId": "1:7825675262555155873",
+      "name": "AudioPathEntity",
+      "properties": [
+        {
+          "id": "1:7825675262555155873",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:6992798347214712185",
+          "name": "audioPathStrings",
+          "targetId": "2:7874062612004661698"
+        }
+      ]
+    },
+    {
+      "id": "2:7874062612004661698",
+      "lastPropertyId": "3:128126836364998823",
+      "name": "AudioPathString",
+      "properties": [
+        {
+          "id": "1:8417117943471653713",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:856929542752814004",
+          "name": "key",
+          "type": 6
+        },
+        {
+          "id": "3:128126836364998823",
+          "name": "value",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:1028969280771019672",
+      "lastPropertyId": "1:3621087899712964008",
+      "name": "DetailsControllerEntity",
+      "properties": [
+        {
+          "id": "1:3621087899712964008",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        }
+      ],
+      "relations": [
+        {
+          "id": "2:8173209520623844672",
+          "name": "detailsControllerStrings",
+          "targetId": "4:484635217409233661"
+        }
+      ]
+    },
+    {
+      "id": "4:484635217409233661",
+      "lastPropertyId": "3:4273087962443244145",
+      "name": "DetailsControllerText",
+      "properties": [
+        {
+          "id": "1:130076486503554384",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1117897587969037050",
+          "name": "key",
+          "type": 6
+        },
+        {
+          "id": "3:4273087962443244145",
+          "name": "value",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:6703956127198940502",
+      "lastPropertyId": "1:5652292771768925910",
+      "name": "DrawImagesEntity",
+      "properties": [
+        {
+          "id": "1:5652292771768925910",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        }
+      ],
+      "relations": [
+        {
+          "id": "3:9021511776335717696",
+          "name": "drawImage",
+          "targetId": "6:1236280156117223268"
+        }
+      ]
+    },
+    {
+      "id": "6:1236280156117223268",
+      "lastPropertyId": "3:8932790790302068598",
+      "name": "DrawImagesString",
+      "properties": [
+        {
+          "id": "1:8884975019268200931",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7258610761174812368",
+          "name": "key",
+          "type": 6
+        },
+        {
+          "id": "3:8932790790302068598",
+          "name": "value",
+          "type": 23
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:1903081959007290785",
+      "lastPropertyId": "2:5457649862639124625",
+      "name": "EmojiIndex",
+      "properties": [
+        {
+          "id": "1:7130338033335228638",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5457649862639124625",
+          "name": "emojiSelectedIndex",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "8:7589735178389919318",
+      "lastPropertyId": "1:7778275775394617333",
+      "name": "ExportDataEntity",
+      "properties": [
+        {
+          "id": "1:7778275775394617333",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        }
+      ],
+      "relations": [
+        {
+          "id": "4:2987091493695479302",
+          "name": "strings",
+          "targetId": "9:1534484922788065750"
+        }
+      ]
+    },
+    {
+      "id": "9:1534484922788065750",
+      "lastPropertyId": "2:6940018133431437682",
+      "name": "ExportStringItem",
+      "properties": [
+        {
+          "id": "1:1234026568018694776",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6940018133431437682",
+          "name": "value",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "10:2142198289257176484",
+      "lastPropertyId": "2:1825199834012199381",
+      "name": "FormatOfDate",
+      "properties": [
+        {
+          "id": "1:7825755056175934655",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1825199834012199381",
+          "name": "dateFormat",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "11:2322218200775348174",
+      "lastPropertyId": "2:1021485948345371839",
+      "name": "ImageDrawData",
+      "properties": [
+        {
+          "id": "1:1480668876447519499",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1021485948345371839",
+          "name": "Image",
+          "type": 23
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "12:4107901905152598250",
+      "lastPropertyId": "1:3852160868248813085",
+      "name": "ImagePathEntity",
+      "properties": [
+        {
+          "id": "1:3852160868248813085",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        }
+      ],
+      "relations": [
+        {
+          "id": "5:8031758651161952806",
+          "name": "imagePathStrings",
+          "targetId": "13:4084488323906369991"
+        }
+      ]
+    },
+    {
+      "id": "13:4084488323906369991",
+      "lastPropertyId": "5:4749309006111526276",
+      "name": "ImagePathString",
+      "properties": [
+        {
+          "id": "1:5516204697915542215",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3306052153904935085",
+          "name": "key",
+          "type": 6
+        },
+        {
+          "id": "3:7295329858216990631",
+          "name": "value",
+          "type": 9
+        },
+        {
+          "id": "4:5737622296807127476",
+          "name": "height",
+          "type": 8
+        },
+        {
+          "id": "5:4749309006111526276",
+          "name": "width",
+          "type": 8
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "14:1989395848933987416",
+      "lastPropertyId": "1:6699672690896215150",
+      "name": "TagDataEntity",
+      "properties": [
+        {
+          "id": "1:6699672690896215150",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        }
+      ],
+      "relations": [
+        {
+          "id": "6:2911451629395682268",
+          "name": "strings",
+          "targetId": "15:8047974654010595974"
+        }
+      ]
+    },
+    {
+      "id": "15:8047974654010595974",
+      "lastPropertyId": "3:8712798535242766053",
+      "name": "TagStringItem",
+      "properties": [
+        {
+          "id": "1:41599630686512943",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2084448489513097576",
+          "name": "key",
+          "type": 6
+        },
+        {
+          "id": "3:8712798535242766053",
+          "name": "value",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "17:8146169608500389388",
+      "lastPropertyId": "3:4894944209909794832",
+      "name": "WriteDiaryDetailsSaveTemporary",
+      "properties": [
+        {
+          "id": "1:7425934056732094580",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:7379867229711956606",
+          "name": "BackgroundImage",
+          "type": 9
+        },
+        {
+          "id": "3:4894944209909794832",
+          "name": "Title",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "18:4365433057894130209",
+      "lastPropertyId": "10:5032933587465299462",
+      "name": "fileCreate",
+      "properties": [
+        {
+          "id": "1:881402151948246691",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:5543976189885665402",
+          "name": "dateTime",
+          "type": 9
+        },
+        {
+          "id": "3:8610521686417435094",
+          "name": "emoji",
+          "type": 6
+        },
+        {
+          "id": "4:7470149081230080205",
+          "name": "title",
+          "type": 9
+        },
+        {
+          "id": "5:1939327587867736366",
+          "name": "isSaveWithDraft",
+          "type": 1
+        },
+        {
+          "id": "6:1296366821614741696",
+          "name": "backgroundImage",
+          "type": 9
+        },
+        {
+          "id": "7:2195137368896843100",
+          "name": "fontFamily",
+          "type": 9
+        },
+        {
+          "id": "8:8445136807011636082",
+          "name": "bulletListImages",
+          "type": 9
+        },
+        {
+          "id": "9:5630206754578581804",
+          "name": "isPinned",
+          "type": 1
+        },
+        {
+          "id": "10:5032933587465299462",
+          "name": "sortData",
+          "type": 6
+        }
+      ],
+      "relations": [
+        {
+          "id": "7:4103272258888702685",
+          "name": "imagePath",
+          "targetId": "13:4084488323906369991"
+        },
+        {
+          "id": "8:9078556689492600415",
+          "name": "audioPath",
+          "targetId": "2:7874062612004661698"
+        },
+        {
+          "id": "9:7262600903167951073",
+          "name": "drawImages",
+          "targetId": "6:1236280156117223268"
+        },
+        {
+          "id": "10:5630968687975404043",
+          "name": "detailsController",
+          "targetId": "4:484635217409233661"
+        },
+        {
+          "id": "11:6220370973608243546",
+          "name": "tags",
+          "targetId": "15:8047974654010595974"
+        }
+      ]
+    },
+    {
+      "id": "19:8250852526993178355",
+      "lastPropertyId": "3:8832856952138268202",
+      "name": "PasswordManger",
+      "properties": [
+        {
+          "id": "1:2390555344683349568",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3034604259699301852",
+          "name": "diaryLockSwitchOn",
+          "type": 1
+        },
+        {
+          "id": "3:8832856952138268202",
+          "name": "fingerPrintSwitchOn",
+          "type": 1
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "20:9112450244579915361",
+      "lastPropertyId": "2:4221291866777525081",
+      "name": "ThemeSet",
+      "properties": [
+        {
+          "id": "1:7818808480147060543",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4221291866777525081",
+          "name": "selectedTheme",
+          "type": 6
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "20:9112450244579915361",
+  "lastIndexId": "0:0",
+  "lastRelationId": "11:6220370973608243546",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    4105655066018150643
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    8046712518156283412,
+    3844796225853199769
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}
